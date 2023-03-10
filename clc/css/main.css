@@ -498,6 +498,14 @@ hr {
     border-right: 1.5px solid black;
     animation: blink 1s step-end infinite;
 }
+.dwnld {
+    display: block;
+    width: 50%;
+    margin: 10px auto 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 @keyframes blink {
 
