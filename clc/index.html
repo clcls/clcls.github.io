@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>calculitor </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="manifest" href="manifestcalc.json" />
+  <meta name="theme-color" content="#3367D6" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="calc.png">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div id="contHist" onclick="hidHist()">
+
+    <div id="divHist" class="divHist scrl">
+      <span id="hidHist" onclick="hidHist()">×</span>
+      <hr style="margin-top:8.2vh;">
+      <div id="lHist" style="overflow-y: auto; overflow-x: hidden; height: 90%;">
+      </div>
+    </div>
+  </div>
+
+  <main role="main" id="background">
+    <div id="inner-wrapper">
+      <div class="page" data-page-nbr="1">
+
+        <div class="card register_form">
+
+
+          <div class="card-body " style=" background-color: rgb(230, 225, 225);">
+
+
+            <div id="cart">
+
+              <p id="drg" onclick="drgFun()" class="drg">deg</p>
+              <button id="histori" class="btn hist" onclick="hist()">History</button>
+
+
+              <p id="mimoir" class="mimoir">M</p>
+              <span id='psSp'>paste</span>
+              <div id="dvfch" class="inp scrl" ondblclick="onlongtouch"><span id="fichour" class="fchr">0</span></div>
+
+              <div id="result" class="result "></div>
+
+              <p id="log"></p>
+              <div id="fdiv" class="func"></div>
+
+              <div id="divNum" class="continent"></div>
+
+              <div id="nrmldv" class="nrml"></div>
+            </div>
+          </div>
+  </main>
+  <div id="dvdw" class="n">
+    <label for="dwnld" style="text-align: center;color: var(--main-color); display: block;">
+      تحميل التطبيق</label for="dwnld">
+    <img id="dwnld" class="dwnld" src="" alt="حمل الموقع">
+  </div>
+  <div id="clVu"></div>
+  <script type="text/javascript" src="js/main.min.js"></script>
+  <script>
+    /* sw */
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js')
+      });
+    }
+  </script>
+</body>
+
+</html>
