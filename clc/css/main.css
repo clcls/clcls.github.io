@@ -248,7 +248,6 @@ html {
 
 #inner-wrapper {
     width: 100%;
-    min-height: 95vh;
     background-color: white;
     text-align: center;
     color: white;
@@ -490,6 +489,7 @@ hr {
 
 .blck {
     display: block;
+    margin-top: 25px;
 }
 
 .fchr {
@@ -498,6 +498,7 @@ hr {
     border-right: 1.5px solid black;
     animation: blink 1s step-end infinite;
 }
+
 .dwnld {
     display: block;
     width: 50%;
@@ -505,7 +506,6 @@ hr {
     border-radius: 10px;
     cursor: pointer;
 }
-
 
 @keyframes blink {
 
