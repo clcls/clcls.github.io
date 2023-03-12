@@ -117,9 +117,10 @@ function creatin() {
         if ((kc > 95) && (kc < 106)) { add(kc - 96); }
         for (let i = 0; i < arkc[0].length; i++) { if (kc === arkc[0][i]) { gebi(arkc[1][i]).click(); } }
     })
-    gebi('clVu').innerHTML += '<iframe src="https://maktaeliliktroniya.blogspot.com/2022/08/calculator.html" ' +
-        'frameborder="0"></iframe>';
-    gebi('clVu').style.display = 'none';
+    setTimeout(() => {
+        gebi('clVu').innerHTML += '<iframe src="https://maktaeliliktroniya.blogspot.com/2022/08/calculator.html" frameborder="0"></iframe>';
+        gebi('clVu').style.display = 'none';
+    }, 5000);
 }
 
 /* ////// short function \\\\\\\\\\ */
@@ -600,8 +601,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
     let os = navigator.userAgent.toLocaleLowerCase();
 
     if (os.includes('android') || os.includes('ipad') || os.includes('iphone')) {
-        gebi('dwnld').src = "https://virefie.github.io/imgs/anddw.png";
         gebi('dvdw').className = 'blck';
+        gebi('dwnld').src = "https://virefie.github.io/imgs/anddw.png";
     }
 
 });
