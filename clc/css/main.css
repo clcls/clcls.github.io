@@ -110,7 +110,7 @@ button:not(:disabled),
     border-color: #0dcaf0;
 }
 
-.card {
+/* .card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -120,13 +120,16 @@ button:not(:disabled),
     background-clip: border-box;
     border: 1px solid #ddd;
     border-radius: 0.25rem;
-}
+} */
 
 
 .card-body {
-    flex: 1 1 auto;
     padding: 1rem 1rem;
-
+    background-color: rgb(230, 225, 225);
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 5px;
 }
 
 .fs-5 {
@@ -239,15 +242,16 @@ html {
     border-color: rgb(254, 34, 34);
 }
 
-#background {
+/* #background {
     text-align: center;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-}
+} */
 
-#inner-wrapper {
+/* #inner-wrapper {
     width: 100%;
+    min-height: 95vh;
     background-color: white;
     text-align: center;
     color: white;
@@ -257,14 +261,14 @@ html {
     background-color: white;
     width: 100%;
     height: 100%;
-}
+} */
 
-.register_form {
+/* .register_form {
     max-width: 450px !important;
     margin: auto;
     color: black;
     text-align: left;
-}
+} */
 
 
 /* /// inp */
@@ -487,24 +491,11 @@ hr {
     display: none;
 }
 
-.blck {
-    display: block;
-    margin-top: 25px;
-}
-
 .fchr {
     margin: 0;
     height: 20px;
     border-right: 1.5px solid black;
     animation: blink 1s step-end infinite;
-}
-
-.dwnld {
-    display: block;
-    width: 50%;
-    margin: 10px auto 50px;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 @keyframes blink {
