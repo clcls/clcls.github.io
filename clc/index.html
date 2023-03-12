@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="manifestcalc.json" />
   <meta name="theme-color" content="#3367D6" />
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -24,38 +24,26 @@
       </div>
     </div>
   </div>
+  <div class="card-body ">
 
-  <main role="main" id="background">
-    <div id="inner-wrapper">
-      <div class="page" data-page-nbr="1">
-
-        <div class="card register_form">
+    <p id="drg" onclick="drgFun()" class="drg">deg</p>
+    <button id="histori" class="btn hist" onclick="hist()">History</button>
 
 
-          <div class="card-body " style=" background-color: rgb(230, 225, 225);">
+    <p id="mimoir" class="mimoir">M</p>
+    <span id='psSp'>paste</span>
+    <div id="dvfch" class="inp scrl" ondblclick="onlongtouch"><span id="fichour" class="fchr">0</span></div>
 
+    <div id="result" class="result "></div>
 
-            <div id="cart">
+    <p id="log"></p>
+    <div id="fdiv" class="func"></div>
 
-              <p id="drg" onclick="drgFun()" class="drg">deg</p>
-              <button id="histori" class="btn hist" onclick="hist()">History</button>
+    <div id="divNum" class="continent"></div>
 
+    <div id="nrmldv" class="nrml"></div>
+  </div>
 
-              <p id="mimoir" class="mimoir">M</p>
-              <span id='psSp'>paste</span>
-              <div id="dvfch" class="inp scrl" ondblclick="onlongtouch"><span id="fichour" class="fchr">0</span></div>
-
-              <div id="result" class="result "></div>
-
-              <p id="log"></p>
-              <div id="fdiv" class="func"></div>
-
-              <div id="divNum" class="continent"></div>
-
-              <div id="nrmldv" class="nrml"></div>
-            </div>
-          </div>
-  </main>
   <div id="dvdw" class="n">
     <label for="dwnld" style="text-align: center;color: var(--main-color); display: block;">
       تحميل التطبيق</label for="dwnld">
